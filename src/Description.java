@@ -20,20 +20,24 @@ public class Description {
     }
 
     public Description(String name, int calories) {
-            this.name = name;
-            this.calories = calories;
-        }
+        this.name = name;
+        this.calories = calories;
+    }
 
 
-        public void checkCalories() {
-            if (calories < 100) {
-                System.out.println(name + " низькокалорійний продукт.");
-            } else if (calories >= 100 && calories <= 200) {
-                System.out.println(name + " має середню кількість калорій.");
-            } else {
-                System.out.println(name + " висококалорійний продукт.");
-            }
+    public String checkCalories() {
+        String cal = "";
+        if (calories < 100) {
+            cal = name + " низькокалорійний продукт.";
+        } else if (calories >= 100 && calories <= 200) {
+            cal = name + " має середню кількість калорій.";
+        } else {
+            cal = name + " висококалорійний продукт.";
         }
+        return cal;
+    }
 }
+
+
 
 

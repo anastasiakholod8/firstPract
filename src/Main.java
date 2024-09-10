@@ -8,9 +8,9 @@ public class Main {
         Description cheesburger = new Description("Чізбургер", 250);
         Description grapes = new Description("Виноград", 120);
 
-        apple.checkCalories();
-        cheesburger.checkCalories();
-        grapes.checkCalories();
+        System.out.println(apple.checkCalories());
+        System.out.println(cheesburger.checkCalories());
+        System.out.println(grapes.checkCalories());
 
 
 
